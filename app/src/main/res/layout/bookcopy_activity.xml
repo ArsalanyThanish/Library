@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".BookCopyActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textViewBookCopy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Copy"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextBookId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Book ID"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/textViewBookCopy"/>
+
+    <EditText
+        android:id="@+id/editTextBranchId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Branch ID"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/editTextBookId"/>
+
+    <EditText
+        android:id="@+id/editTextAccessNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Access No"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/editTextBranchId"/>
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/editTextAccessNo"/>
+
+    <Button
+        android:id="@+id/btnRead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/btnCreate"/>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/btnRead"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/btnUpdate"/>
+
+</RelativeLayout>

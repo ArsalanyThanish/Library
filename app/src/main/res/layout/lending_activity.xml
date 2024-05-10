@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".LendingActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textViewLendingDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lending Details"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Add EditText fields and buttons for lending details -->
+    <EditText
+        android:id="@+id/lendingId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lending ID"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/textViewLendingDetails"/>
+
+    <EditText
+        android:id="@+id/branchId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Branch ID"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/lendingId"/>
+
+    <EditText
+        android:id="@+id/bookId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Book ID"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/branchId"/>
+
+    <EditText
+        android:id="@+id/memberId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Member ID"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/bookId"/>
+
+    <EditText
+        android:id="@+id/dateOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date Out"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/memberId"/>
+
+    <EditText
+        android:id="@+id/dateDue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date Due"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/dateOut"/>
+
+    <EditText
+        android:id="@+id/dateReturned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date Returned"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/dateDue"/>
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/dateReturned"/>
+
+    <Button
+        android:id="@+id/btnRead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btnCreate"/>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btnRead"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btnUpdate"/>
+
+</RelativeLayout>
